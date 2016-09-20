@@ -187,10 +187,11 @@
 	  </div>
 	</div>
 
-<!--/////////////////////////////////////////////////////////////////////////////////-->
+<!--////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
   <script type="text/javascript">
   	// JavaScript
     var config = {
+    //Class .chosen-select
       '.chosen-select'           : {},
       '.chosen-select-deselect'  : {allow_single_deselect:true},
       '.chosen-select-no-single' : {disable_search_threshold:10},
@@ -200,6 +201,7 @@
     for (var selector in config) {
       $(selector).chosen(config[selector]);
     }
+// =============================================================>
 
     // Submit button
     $("#submit").on("click", function(){
@@ -219,6 +221,7 @@
 		  })
 		  return isValid;
 		}
+// =============================================================>
 
 		// If all required fields are filled
 		if (validateForm() == true)
@@ -229,7 +232,7 @@
 	    		photo: $("#photo").val(),
 	    		scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
 	    	}
-
+	    	
 
 	    	// Grab the URL of the website
 	    	var currentURL = window.location.origin;
@@ -248,7 +251,7 @@
 		}
 		else
 		{
-			alert("Please fill out all fields before submitting!");
+			alert("Fill out the fields Porfavor!");
 		}
     	
     	return false;
