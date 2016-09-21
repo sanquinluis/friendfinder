@@ -15,3 +15,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 // =============================================================
+
+//Routs
+app.get("/", function(req, res){
+	res.send('Welcome to Friends Travel Finder!');
+});
+app.get("/api/friends", function(req, res){
+
+});
+
+
+
+
+
+app.listen(PORT, function () {
+	console.log('Server started! At http://localhost:' + PORT);
+});
