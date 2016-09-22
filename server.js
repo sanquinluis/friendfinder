@@ -9,7 +9,7 @@ const path = require('path'); //calls path npm.
 // =============================================================
 
 var app = express(); //defines are app using express.
-var PORT = 3001; //PORT Number that we are using.
+var PORT = process.env.PORT || 3001; //PORT Number that we are using.
 
 // =============================================================
 // Sets up the Express app to handle data parsing
@@ -21,15 +21,11 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 // =============================================================
 //Routs
+//These are routes files
+//Gives the server a 'map' of how to respond when user visits. 
 
-app.get("/", function(req, res){
-	res.send('Welcome to Friends Travel Finder!');
-});
-app.get("/api/friends", function(req, res){
-
-});
-
-
+require('./app/routing/html-routes.js')(app);
+// require('./app/routing/api-routes.js')(app);
 
 // =============================================================
 //This Listener will tell you if you are connected.

@@ -1,6 +1,6 @@
 //Hard coded Array of friends data.
-
-var friends = [{
+// ======================================================================
+var friendsArray = [{
 	name: "Joe Bag of Donuts",
 	foto: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8Ry5XomcQ3zgCX3N44hs7LFmScmPistw-HvilUvLji70FJWc0Xg",
 	scores: [2,3,4,1,2,4,5,2,3,1]
@@ -14,5 +14,5 @@ var friends = [{
 	scores: [1,2,1,2,1,2,1,2,1,2]
 }];
 
-//Export friends to other places. 
+//Export friendsArray to other js files that require the data. 
 module.exports = friends;
