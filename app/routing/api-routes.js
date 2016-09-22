@@ -1,8 +1,29 @@
-// Your api-routes.js file should contain two routes:
-// A GET route with the url /api/friends. This will be used to display a JSON of all possible friends.
-// A POST routes /api/friends. This will be used to handle incoming survey results. 
+// Your api-routes.js file should contain two routes: 
 // This route will also be used to handle the compatibility logic.
+//Loading DATA
 // Dependencies 
 // =============================================================
+var friends = require('friends');
 
-// var friends = requiere('../data/friends');
+// =============================================================
+//ROUTING
+
+module.exports = function(app) {
+		//API GET request
+		//The code bellow will handel when user visits the page.
+		//In each of the below cases when the user visits the link
+		app.get('/api/friends', function(req, res) {
+			res.json(friends);
+		});
+
+		//Creats a New Friend if true
+		app.post('/api/friends', function(req, res) {
+			if(){
+
+			}
+		})
+
+
+
+
+}

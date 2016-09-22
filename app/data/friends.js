@@ -1,6 +1,7 @@
-//Hard coded Array of friends data.
+//Hard cooded Array of friends. 
+//DATA.
 // ======================================================================
-var friendsArray = [{
+var friends = [{
 	name: "Joe Bag of Donuts",
 	foto: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8Ry5XomcQ3zgCX3N44hs7LFmScmPistw-HvilUvLji70FJWc0Xg",
 	scores: [2,3,4,1,2,4,5,2,3,1]
