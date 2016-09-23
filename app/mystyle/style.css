@@ -50,7 +50,8 @@ h1.elegantshadow {
 }
 h2 {
 	text-align: center;
+	text-decoration-color: #00ffff;
 }
-.btn {
+.home-btn {
 	margin: 0 490px;
 }
