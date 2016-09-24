@@ -25,7 +25,7 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 //Gives the server a 'map' of how to respond when user visits. 
 
 require('./app/routing/html-routes.js')(app);
-require('./app/routing/api-routes.js')(app);
+// require('./app/routing/api-routes.js')(app);
 
 // =============================================================
 //This Listener will tell you if you are connected.
