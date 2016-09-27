@@ -11,11 +11,11 @@ module.exports = function(app) {
 		//second html path that will be send. 
 		//***accidentally I misspelled survey****!
 		app.get('/servey', function (req, res) {
-		res.sendFile(path.join(__dirname, '../public/servey.html'));
+		res.sendFile(path.join(__dirname, '/../public/servey.html'));
 });
 		//home.html will be used for the default page when a user visits the web page. 
 		app.use(function(req, res){
-		res.sendFile(path.join(__dirname + '../public/home.html'));
+		res.sendFile(path.join(__dirname + '/../public/home.html'));
 });
 
 };
